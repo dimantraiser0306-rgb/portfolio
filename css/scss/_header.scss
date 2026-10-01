@@ -148,10 +148,10 @@
 .hidden__left{
     opacity: 0;
     transition: all 1s ease-out;
-    transform: translateX(100%);
-    
+    transform: translateX(100%);   
         h2{
-        font-size: 54px;
+        // font-size: clamp(20px, 10vh, 54px);
+        font-size: 20px;
          span{
             font-size: 100px;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
