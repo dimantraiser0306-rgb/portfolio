@@ -264,3 +264,19 @@ const observeWorkBlock2TopRight = new IntersectionObserver(
 for (const i of [...workBlock2TopRight, ...workBlock2BottomRight]) {
   observeWorkBlock2TopRight.observe(i);
 }
+
+// создание логики отправки сообщений в TG
+
+const inputFormWrap = document.querySelector(".inputFormWrap");
+const inputInputName = document.querySelector(".inputInputName");
+const inputInputPhoneNumber = document.querySelector(".inputInputPhoneNumber");
+const inputInputText = document.querySelector(".inputInputText");
+
+const TOKET = "8877226350:AAGKRXXYOXAsJvzhGvv83PYIxEsKmFF5MvU";
+const chatID = "2108828070";
+inputFormWrap.addEventListener("submit", async function (e) {
+  const name = inputInputName.value;
+  const phone = inputInputPhoneNumber.value;
+  const message = inputInputText.value;
+  const url = `https://telegram.org{8877226350:AAGKRXXYOXAsJvzhGvv83PYIxEsKmFF5MvU}/sendMessage`;
+});
