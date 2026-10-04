@@ -1,7 +1,7 @@
 .philosophy{
     margin: 0 auto;
     max-width: 1440px;
-    background-color: var(--philosophy-bg-color);
+    background-color: #100f0fb8;
 }
 .philosophy_blocks {
     position: relative;
@@ -23,9 +23,10 @@
     width: 100%;
     gap: 24px;
     text-align: left;
+    color: white;
         a{
             margin-top: auto;
-            color: var(--dark-purpure);
+            color: white;
             border-bottom: 1px solid var(--light-gray);
             align-self: flex-start;
             padding: 4px 0;

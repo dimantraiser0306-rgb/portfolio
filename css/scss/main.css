@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Sen", sans-serif;
   overflow-x: hidden;
+  background-color: #000;
 }
 
 a {
@@ -96,7 +97,7 @@ h3 {
   margin: 0 auto;
   position: relative;
   display: flex;
-  background-color: #000;
+  background-color: rgba(16, 15, 15, 0.7215686275);
   max-width: 1440px;
   width: 100%;
 }
@@ -337,7 +338,7 @@ h3 {
 }
 .main {
   margin: 0 auto;
-  background-color: #000;
+  background-color: black;
   display: flex;
   max-width: 1441px;
   justify-content: center;
@@ -421,7 +422,7 @@ h3 {
 .philosophy {
   margin: 0 auto;
   max-width: 1440px;
-  background-color: var(--philosophy-bg-color);
+  background-color: rgba(16, 15, 15, 0.7215686275);
 }
 
 .philosophy_blocks {
@@ -443,10 +444,11 @@ h3 {
   width: 100%;
   gap: 24px;
   text-align: left;
+  color: white;
 }
 .philosophy_block1 a {
   margin-top: auto;
-  color: var(--dark-purpure);
+  color: white;
   border-bottom: 1px solid var(--light-gray);
   align-self: flex-start;
   padding: 4px 0;
@@ -901,6 +903,7 @@ a {
   max-width: 1440px;
   width: 100%;
   color: white;
+  background-color: rgba(16, 15, 15, 0.7215686275);
 }
 
 .comments__blocks {
@@ -1024,7 +1027,7 @@ a {
 
 .btn {
   padding: 0;
-  border: 1px solid var(--purpure);
+  border: 1px solid rgb(21, 83, 102);
   background: inherit;
   color: #fff;
   padding: 12px 16px;
@@ -1052,7 +1055,7 @@ a {
 }
 
 .colored {
-  background-color: var(--purpure);
+  background-color: rgb(21, 83, 102);
 }
 
 @media (max-width: 1200px) {
@@ -1120,7 +1123,7 @@ a {
 }
 
 .input {
-  background: var(--dark-purpure);
+  background: rgba(16, 15, 15, 0.7215686275);
   box-sizing: border-box;
   border: none;
   border-radius: 0;
@@ -1132,7 +1135,7 @@ a {
 }
 
 .last__group textarea {
-  background: var(--dark-purpure);
+  background: rgba(16, 15, 15, 0.7215686275);
   height: 100px;
   border: none;
   outline: none;
@@ -1141,7 +1144,7 @@ a {
 }
 
 .input__group-btn {
-  background-color: var(--purpure);
+  background-color: rgb(21, 83, 102);
   width: 100%;
   height: 75px;
   margin-top: 40px;
@@ -1236,7 +1239,7 @@ a {
   }
 }
 .footer {
-  background-color: var(--dark-purpure);
+  background-color: rgb(21, 83, 102);
   padding: 80px 0;
   margin: 0 auto;
   max-width: 1440px;
