@@ -84,9 +84,15 @@ h3 {
   opacity: 1;
 }
 
+.animationForBorder {
+  border-bottom: 1px solid red !important;
+  transition: 1s ease-in-out;
+}
+
 :root {
-  --bg-color: #000;
+  --background-color: rgba(16, 15, 15, 0.7215686275);
   --philosophy-bg-color: #FFF3E4;
+  --blue-color: rgb(16, 169, 216);
   --dark-purpure: #181823;
   --purpure: #5221E6;
   --light-gray: #8491A0;
@@ -100,6 +106,7 @@ h3 {
   background-color: rgba(16, 15, 15, 0.7215686275);
   max-width: 1440px;
   width: 100%;
+  border-radius: 0 clamp(100px, 40vw, 360px) 20px clamp(100px, 40vw, 360px);
 }
 
 .header__top {
@@ -210,7 +217,7 @@ h3 {
   padding: 15px;
 }
 .menu__button span {
-  background-color: var(--purpure);
+  background-color: var(--light-gray);
   width: 100%;
   height: 2px;
 }
@@ -222,7 +229,6 @@ h3 {
   height: 100%;
   max-height: 730px;
   border-radius: 20% 50% 20% 50%;
-  margin: 0 20px;
   opacity: 0;
   transition: all 1s ease-in;
   border: 3px solid rgb(88, 85, 85);
@@ -245,7 +251,7 @@ h3 {
 .hidden__left h2 span {
   font-size: 100px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgb(94, 94, 226);
+  color: var(--blue-color);
 }
 
 .show {
@@ -337,12 +343,15 @@ h3 {
   }
 }
 .main {
-  margin: 0 auto;
-  background-color: black;
   display: flex;
-  max-width: 1441px;
+  background-color: inherit;
   justify-content: center;
+  margin: 0 auto 50px;
+  max-width: 1441px;
   color: #fff;
+  border-bottom: 1px solid var(--blue-color);
+  border-radius: 0 0 0 clamp(100px, 40vw, 300px);
+  transition: 1s ease;
 }
 
 .container {
@@ -453,6 +462,9 @@ h3 {
   align-self: flex-start;
   padding: 4px 0;
 }
+.philosophy_block1 p {
+  min-height: clamp(247px, 20vh, 486px);
+}
 
 .philosophy_block2 {
   box-sizing: border-box;
@@ -462,6 +474,7 @@ h3 {
   width: 100%;
   background-repeat: no-repeat;
   overflow: hidden;
+  transition: all 1s ease;
 }
 .philosophy_block2 img {
   width: 100%;
@@ -757,7 +770,7 @@ h3 {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
-  background-color: #FBE4FF;
+  background-color: var(--blue-color);
 }
 
 a {
@@ -779,12 +792,13 @@ a {
   justify-content: space-between;
   max-width: 576px;
   width: 100%;
+  padding: 20px 20px 0;
 }
 .instagram__wrap .instagram__block-left h2 {
   font-size: clamp(20px, 2.5vw, 55px);
 }
 .instagram__wrap .instagram__block-left p {
-  color: var(--dark-gray);
+  color: white;
 }
 .instagram__wrap .instagram__block-left a {
   color: #000;
@@ -811,9 +825,6 @@ a {
   }
   .instagram__block-left {
     box-sizing: border-box;
-  }
-  .typeAnimationText {
-    padding: 10px;
   }
   .intagram__block-right {
     box-sizing: border-box;
@@ -902,7 +913,7 @@ a {
   max-width: 1440px;
   width: 100%;
   color: white;
-  background-color: rgba(16, 15, 15, 0.7215686275);
+  background-color: var(--background-color);
 }
 
 .comments__blocks {
@@ -915,6 +926,7 @@ a {
 .comments__block-left {
   display: flex;
   flex-direction: column;
+  max-width: 500px;
   gap: 24px;
 }
 .comments__block-left h2 {
@@ -938,6 +950,7 @@ a {
 
 .comments__block1 {
   max-width: 636px;
+  width: 100%;
   width: 100%;
   border: 1px solid var(--dark-gray);
 }
@@ -1077,7 +1090,7 @@ a {
 }
 .feedback {
   display: flex;
-  background-color: var(--bg-color);
+  background-color: var(--background-color);
   color: white;
   margin: 0 auto;
   max-width: 1440px;

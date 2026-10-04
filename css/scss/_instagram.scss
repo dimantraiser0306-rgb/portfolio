@@ -2,7 +2,7 @@
     margin: 0 auto;
     max-width: 1440px;
     width: 100%;
-    background-color: #FBE4FF;
+    background-color: var(--blue-color);
    
 }
 
@@ -24,12 +24,13 @@
         flex-direction: column;
         justify-content: space-between;
         max-width: 576px;
-        width: 100%;          
+        width: 100%;        
+        padding: 20px 20px 0;  
                 h2{
                      font-size: clamp(20px, 2.5vw, 55px);
                 }      
                 p{                 
-                    color: var(--dark-gray);
+                    color: white;
                 }
                 a{
                     color: #000;
@@ -59,10 +60,10 @@
         
         box-sizing: border-box;
     }
-    .typeAnimationText{
-        padding: 10px;
+    // .typeAnimationText{
+    //     padding: 10px;
        
-    }
+    // }
     .intagram__block-right{
         box-sizing: border-box;
         padding: 20px;

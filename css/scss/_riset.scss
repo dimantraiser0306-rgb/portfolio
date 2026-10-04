@@ -82,3 +82,10 @@ h3{
     visibility: visible;
     opacity: 1;
 }
+
+// анимацитя для нижнего бордер
+
+.animationForBorder{
+    border-bottom: 1px solid red !important;
+    transition: 1s ease-in-out;
+}

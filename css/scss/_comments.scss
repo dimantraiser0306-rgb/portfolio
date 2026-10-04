@@ -5,7 +5,7 @@
     max-width: 1440px;
     width: 100%;
     color: white;
-    background-color: #100f0fb8;
+    background-color: var(--background-color);
     
 }
 
@@ -20,6 +20,7 @@
 .comments__block-left{
     display: flex;
     flex-direction: column;
+    max-width: 500px;
     gap: 24px;
         h2{
             font-size: 40px;
@@ -44,6 +45,7 @@
 
 .comments__block1 {
     max-width: 636px;
+    width: 100%;
     width: 100%;
     border: 1px solid var(--dark-gray);
         img{
@@ -72,6 +74,7 @@
             color: var(--light-gray);
         }
 }
+
 @media(max-width: 1200px){
     .comments__blocks{
         padding: 0 20px;

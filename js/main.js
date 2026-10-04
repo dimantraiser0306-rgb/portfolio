@@ -313,3 +313,16 @@ inputFormWrap.addEventListener("submit", async function (e) {
     alert("Не удалось связаться с сервером.");
   }
 });
+
+const main = document.querySelector(".main");
+
+setInterval(function () {
+  const IntervalId = setInterval(function () {
+    main.classList.add("animationForBorder");
+    console.log("some");
+  }, 1500);
+  setTimeout(function () {
+    main.classList.remove("animationForBorder");
+    clearInterval(IntervalId);
+  }, 3000);
+}, 3000);
