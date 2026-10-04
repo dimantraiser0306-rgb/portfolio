@@ -281,7 +281,7 @@ inputFormWrap.addEventListener("submit", async function (e) {
   const phone = inputInputPhoneNumber.value;
   const message = inputInputText.value;
 
-  const fullMessage = `Сообщение с портфолио: Имя:${name}/nТелефон${phone}n/Сообщение: ${message}`;
+  const fullMessage = `Сообщение с портфолио: Имя:''${name}\nТелефон:''${phone}\nСообщение:''${message}`;
 
   const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
