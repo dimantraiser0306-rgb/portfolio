@@ -272,11 +272,39 @@ const inputInputName = document.querySelector(".inputInputName");
 const inputInputPhoneNumber = document.querySelector(".inputInputPhoneNumber");
 const inputInputText = document.querySelector(".inputInputText");
 
-const TOKET = "8877226350:AAGKRXXYOXAsJvzhGvv83PYIxEsKmFF5MvU";
+const TOKEN = "8877226350:AAGKRXXYOXAsJvzhGvv83PYIxEsKmFF5MvU";
 const chatID = "2108828070";
 inputFormWrap.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
   const name = inputInputName.value;
   const phone = inputInputPhoneNumber.value;
   const message = inputInputText.value;
-  const url = `https://telegram.org{8877226350:AAGKRXXYOXAsJvzhGvv83PYIxEsKmFF5MvU}/sendMessage`;
+
+  const fullMessage = `Сообщение с портфолио: Имя:${name}/nТелефон${phone}n/Сообщение: ${message}`;
+
+  const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        chat_id: chatID,
+        text: fullMessage,
+      }),
+    });
+
+    if (response.ok) {
+      alert("Сообщение успешно отправлено!");
+      inputFormWrap.reset();
+    } else {
+      alert("Ошибка при отправке сообщения.");
+    }
+  } catch (error) {
+    console.error("Ошибка сети:", error);
+    alert("Не удалось связаться с сервером.");
+  }
 });
