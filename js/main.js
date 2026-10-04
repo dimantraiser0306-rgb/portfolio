@@ -285,6 +285,11 @@ inputFormWrap.addEventListener("submit", async function (e) {
 
   const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
+  if (message === "") {
+    alert("Введите сообщение!");
+    return;
+  }
+
   try {
     const response = await fetch(url, {
       method: "POST",

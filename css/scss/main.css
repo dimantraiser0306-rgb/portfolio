@@ -32,7 +32,7 @@ a {
   transition: tranform(0.5s);
 }
 a:hover {
-  color: var(--purpure);
+  color: rgb(8, 28, 34);
 }
 
 p {
@@ -852,7 +852,6 @@ a {
 .dribbble__wrap a {
   align-self: start;
   padding: 4px;
-  border-bottom: 1px solid var(--light-gray);
 }
 .dribbble__wrap {
   gap: 124px;
@@ -1155,11 +1154,11 @@ a {
   transition: transform 0.1s ease;
   opacity: 0;
   transform: translateY(50px);
-  transition: all 1s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .input__group-btn:hover {
-  background-color: rgb(49, 27, 87);
+  background-color: rgb(15, 59, 72);
 }
 
 .input__group-btn:active {

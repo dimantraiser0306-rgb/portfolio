@@ -79,12 +79,12 @@
     transition: transform .1s ease;
     opacity: 0;
     transform: translateY(50px);
-    transition: all 1s ease-in;
+    transition: all .5s ease-in;
     
 }
 
 .input__group-btn:hover{
-    background-color: rgb(49, 27, 87);
+    background-color: rgb(15, 59, 72);
 }
 
 .input__group-btn:active{
