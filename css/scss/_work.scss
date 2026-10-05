@@ -81,6 +81,11 @@
         a{
             padding: 24px 32px;
             border: 1px solid var(--blue-color);
+            transition: .5s ease-in-out;
+                &:hover{
+                    border: 1px solid red;
+                    color: rgb(246, 240, 240);
+                }
         }
 }
 

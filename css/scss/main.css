@@ -731,6 +731,11 @@ h3 {
 .work__block-link a {
   padding: 24px 32px;
   border: 1px solid var(--blue-color);
+  transition: 0.5s ease-in-out;
+}
+.work__block-link a:hover {
+  border: 1px solid red;
+  color: rgb(246, 240, 240);
 }
 
 .work__block1-top-left {
@@ -866,7 +871,7 @@ a {
   padding: 4px;
 }
 .dribbble__wrap {
-  gap: 124px;
+  gap: 20px;
 }
 .dribbble__wrap .dribbble__info {
   display: flex;
