@@ -272,8 +272,6 @@ const inputInputName = document.querySelector(".inputInputName");
 const inputInputPhoneNumber = document.querySelector(".inputInputPhoneNumber");
 const inputInputText = document.querySelector(".inputInputText");
 
-const TOKEN = "8877226350:AAGKRXXYOXAsJvzhGvv83PYIxEsKmFF5MvU";
-const chatID = "2108828070";
 inputFormWrap.addEventListener("submit", async function (e) {
   e.preventDefault();
 
@@ -282,8 +280,6 @@ inputFormWrap.addEventListener("submit", async function (e) {
   const message = inputInputText.value;
 
   const fullMessage = `Сообщение с портфолио: Имя: ${name}\nТелефон: ${phone}\nСообщение: ${message}`;
-
-  const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   if (message === "") {
     alert("Введите сообщение!");
