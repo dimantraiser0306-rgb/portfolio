@@ -6,10 +6,9 @@
    
 }
 
- a{
-    display: block;
-   padding: 10px;
-        }
+.typeAnimationText{
+    font-size: 22px;
+}
 
 .instagram__wrap {
     margin: 0 auto;
@@ -31,11 +30,9 @@
                 }      
                 p{                 
                     color: white;
+                    font-size: 22px !important;
                 }
-                a{
-                    color: #000;
-                    align-self: flex-start;
-                }
+
         }
         .intagram__block-right {
             display: flex;

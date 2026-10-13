@@ -123,7 +123,7 @@ h3 {
   padding: 10px;
 }
 .header__top .logo {
-  max-width: 77.5px;
+  max-width: 120px;
 }
 .header__top .logo img {
   display: block;
@@ -193,7 +193,7 @@ h3 {
 }
 
 .header__link:hover {
-  color: rgb(88, 85, 85);
+  color: var(--blue-color);
 }
 
 .planshet__img {
@@ -779,9 +779,8 @@ h3 {
   background-color: var(--blue-color);
 }
 
-a {
-  display: block;
-  padding: 10px;
+.typeAnimationText {
+  font-size: 22px;
 }
 
 .instagram__wrap {
@@ -805,10 +804,7 @@ a {
 }
 .instagram__wrap .instagram__block-left p {
   color: white;
-}
-.instagram__wrap .instagram__block-left a {
-  color: #000;
-  align-self: flex-start;
+  font-size: 22px !important;
 }
 .instagram__wrap .intagram__block-right {
   display: flex;
@@ -924,9 +920,10 @@ a {
 
 .comments__blocks {
   display: flex;
-  gap: 24px;
-  margin: 120px auto;
+  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
+  margin: 120px auto;
 }
 
 .comments__block-left {
@@ -934,6 +931,7 @@ a {
   flex-direction: column;
   max-width: 500px;
   gap: 24px;
+  padding-bottom: 50px;
 }
 .comments__block-left h2 {
   font-size: 40px;
@@ -955,7 +953,7 @@ a {
 }
 
 .comments__block1 {
-  max-width: 636px;
+  max-width: 500px;
   width: 100%;
   width: 100%;
   border: 1px solid var(--dark-gray);
@@ -966,11 +964,16 @@ a {
   width: 100%;
 }
 
+.comments__block-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .comments__info-wrap {
   margin: 64px;
 }
 .comments__info-wrap p {
-  font-size: 24px;
+  font-size: clamp(16px, 4vw, 24px) !important;
   font-weight: 700;
   margin-bottom: 64px;
 }
@@ -1011,90 +1014,8 @@ a {
     margin-bottom: 0;
   }
 }
-.photography {
-  display: block;
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  background-color: var(--bg-color);
-  color: white;
-}
-
-.photography__wrap {
-  margin: clamp(20px, 10vh, 120px) auto;
-  max-width: 1296px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.photography__wrap h2 {
-  margin-bottom: 24px;
-  font-size: clamp(20px, 2.5vw, 40px);
-}
-.photography__wrap p {
-  max-width: 588px;
-  color: var(--light-gray);
-  font-size: 18px;
-  margin-bottom: 64px;
-}
-.photography__wrap .links {
-  display: flex;
-  gap: clamp(5px, 2.5vw, 25px);
-  padding-bottom: 40px;
-}
-
-.btn {
-  padding: 0;
-  border: 1px solid rgb(21, 83, 102);
-  background: inherit;
-  color: #fff;
-  padding: 12px 16px;
-  cursor: pointer;
-  display: block;
-}
-
-.photography__images {
-  display: none;
-  flex-wrap: wrap;
-  max-width: 1296px;
-  width: 100%;
-  gap: 23px;
-}
-.photography__images img {
-  box-sizing: border-box;
-  max-width: 306px;
-  width: 100%;
-  max-height: 420px;
-  height: 100%;
-}
-
-.photography__images.active {
-  display: flex;
-}
-
-.colored {
-  background-color: rgb(21, 83, 102);
-}
-
-@media (max-width: 1200px) {
-  .photography__wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 20px;
-  }
-  .photography__images {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 800px) {
-  btn {
-    padding: 8px 10px;
-  }
-}
 .feedback {
+  position: relative;
   display: flex;
   background-color: var(--background-color);
   color: white;
@@ -1121,6 +1042,10 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: auto;
+}
+.feedback__wrap-block-left h2 {
+  font-size: 50px;
 }
 .feedback__wrap-block-left p {
   color: var(--dark-gray);
@@ -1237,6 +1162,15 @@ a {
   opacity: 1;
 }
 
+.hero__feedback {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-position: bottom;
+}
+
 @media (max-width: 1000px) {
   .input__group {
     max-width: 332px;
@@ -1260,7 +1194,7 @@ a {
 }
 .footer {
   background-color: rgb(21, 83, 102);
-  padding: 80px 0;
+  padding: 80px 0 10px;
   margin: 0 auto;
   max-width: 1440px;
   box-sizing: border-box;
@@ -1294,7 +1228,7 @@ a {
   margin-bottom: 142px;
 }
 .footer__block-left ul li img {
-  width: 18px;
+  width: 35px;
   display: block;
 }
 .footer__block-left p {

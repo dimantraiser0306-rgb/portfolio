@@ -11,10 +11,10 @@
 
 .comments__blocks {
     display: flex;
-    gap: 24px;
-    margin: 120px auto;
+    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    
+    margin: 120px auto;
 }
 
 .comments__block-left{
@@ -22,6 +22,7 @@
     flex-direction: column;
     max-width: 500px;
     gap: 24px;
+    padding-bottom: 50px;
         h2{
             font-size: 40px;
         }
@@ -44,7 +45,7 @@
 }
 
 .comments__block1 {
-    max-width: 636px;
+    max-width: 500px;
     width: 100%;
     width: 100%;
     border: 1px solid var(--dark-gray);
@@ -55,10 +56,15 @@
         }
 }
 
+.comments__block-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .comments__info-wrap{
     margin: 64px;
         p{
-            font-size: 24px;
+            font-size: clamp(16px, 4vw, 24px) !important;
             font-weight: 700;
             margin-bottom: 64px;
         }

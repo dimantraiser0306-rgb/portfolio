@@ -21,7 +21,7 @@
     height: auto;
     padding: 10px;    
     .logo{
-        max-width: 77.5px;
+        max-width: 120px;
             img{
                 display: block;
             }
@@ -96,7 +96,7 @@
 
 .header__link{
     &:hover {
-        color: rgb(88, 85, 85);
+        color: var(--blue-color);
         }
 }
 
