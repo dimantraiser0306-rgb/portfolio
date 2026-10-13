@@ -315,10 +315,23 @@ const main = document.querySelector(".main");
 setInterval(function () {
   const IntervalId = setInterval(function () {
     main.classList.add("animationForBorder");
-    console.log("some");
   }, 1500);
   setTimeout(function () {
     main.classList.remove("animationForBorder");
     clearInterval(IntervalId);
   }, 3000);
 }, 3000);
+
+setInterval(function () {
+  const callImg = document.querySelector(".call__img-code");
+  const intervalID = setInterval(function () {
+    console.log("start 1");
+    callImg.classList.add("call__img-code--red");
+  }, 800);
+
+  const timeoutID = setTimeout(function () {
+    console.log("start");
+    callImg.classList.remove("call__img-code--red");
+    clearInterval(intervalID);
+  }, 1600);
+}, 1600);

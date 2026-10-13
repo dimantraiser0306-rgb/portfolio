@@ -6,6 +6,7 @@
     max-width: 1440px;
     width: 100%;
     border-radius: 0 clamp(100px, 40vw, 360px) 20px clamp(100px, 40vw, 360px);
+
 }
 
 .header__top{
@@ -37,16 +38,29 @@
     height: 100%;
     align-items: center;
     padding-top: 32px;
+    text-align: center;
+    z-index: 10;
 }
 
 .menu ul{
     display: flex;
+    align-items: center;
     gap: 48px;
 }
 
+.call__option{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .colored{
-    padding: 32px 24px;
-    background-color: var(--purpure)
+    padding: 15px 28px;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+        &:hover{
+            color: red;
+        }
 }
 
 .two__coresontal-blocks {
@@ -92,8 +106,6 @@
     gap: 32px;
 }
 
-
-
 .header__link{
     &:hover {
         color: var(--blue-color);
@@ -108,7 +120,6 @@
 .phone__img{
     display: none;
 }
-
 .menu__button{
     display: none;
     z-index: 200;

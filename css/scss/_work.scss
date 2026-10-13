@@ -84,7 +84,7 @@
             transition: .5s ease-in-out;
                 &:hover{
                     border: 1px solid red;
-                    color: rgb(246, 240, 240);
+                    color: var(--blue-color);
                 }
         }
 }

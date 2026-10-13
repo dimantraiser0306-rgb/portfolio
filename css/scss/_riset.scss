@@ -12,16 +12,7 @@ html{
 }
 body{
     font-family: "Sen", sans-serif;
-    overflow-x: hidden;
     background-color: #000;
-}
-a{
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #fff;
-    transition: color .5s;
-    
 }
 
 a{
@@ -29,9 +20,10 @@ a{
     font-weight: 400;
     text-decoration: none;
     color: #fff;
-    transition: tranform(.5s);
+    transition: all .3s ease-in-out;
+
     &:hover{
-        color: rgb(8, 28, 34);
+        color: var(--blue-color);
     }
 }
 
@@ -87,3 +79,4 @@ h3{
     border-bottom: 1px solid red !important;
     transition: 1s ease-in-out;
 }
+
