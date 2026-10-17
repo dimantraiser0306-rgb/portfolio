@@ -120,6 +120,13 @@ h3 {
   display: block;
 }
 
+.header__right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
 .menu {
   display: flex;
   padding: 0 72px;
@@ -264,8 +271,16 @@ h3 {
 }
 
 @media (max-width: 1000px) {
+  .header__title {
+    z-index: 2;
+    left: 10px;
+    bottom: 200px;
+  }
   .header__title h1 {
-    font-size: 56px;
+    font-size: clamp(22px, 6vw, 56px);
+  }
+  .header__right-side {
+    flex-direction: column;
   }
   .planshet__img {
     display: flex;
@@ -931,9 +946,12 @@ h3 {
 }
 
 .comments__block-left {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  width: -moz-fit-content;
+  width: fit-content;
   gap: 24px;
   padding-bottom: 50px;
 }
@@ -942,6 +960,8 @@ h3 {
 }
 .comments__block-left p {
   color: var(--light-gray);
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .comments__block-left a {
   margin-top: 16px;
@@ -1004,7 +1024,7 @@ h3 {
     font-size: 18px;
   }
   .comments__block-right {
-    gap: 50px;
+    gap: clamp(20px, 6vw, 50px);
   }
 }
 @media (max-width: 765px) {
@@ -1170,8 +1190,9 @@ h3 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: 100%;
   background-position: bottom;
 }
 
@@ -1298,18 +1319,23 @@ h3 {
 .main__projects-wrap {
   max-width: 900px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
   background-color: #000;
   border-radius: 400px 10px 300px 150px;
+  gap: 20px;
 }
 
 .main__item {
-  width: 400px;
-  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 10px;
   overflow: hidden;
 }
 .main__item img {
+  max-width: 440px;
   width: 100%;
   border-radius: 20px;
   transform: scale(1);

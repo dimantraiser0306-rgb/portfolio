@@ -2,20 +2,24 @@
     margin: 0 auto;
     padding-top: 150px;
 }
+
 .main__projects-wrap{
     max-width: 900px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
     background-color: #000;
     border-radius: 400px 10px 300px 150px;
+    gap: 20px;
 }
 
 .main__item{
-    width: 400px;
-    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    height: fit-content;
     padding: 10px;
     overflow: hidden;
     img{
+        max-width: 440px;
         width: 100%;
         border-radius: 20px;
         transform: scale(1);
