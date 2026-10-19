@@ -6,13 +6,13 @@
 
 html {
   box-sizing: border-box;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Sen", sans-serif;
   background-color: #000;
+  overflow-x: hidden;
 }
 
 a {

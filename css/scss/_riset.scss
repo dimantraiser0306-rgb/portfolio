@@ -7,12 +7,12 @@
 
 html{
     box-sizing: border-box;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 body{
     font-family: "Sen", sans-serif;
     background-color: #000;
+    overflow-x: hidden;
 }
 
 a{
@@ -68,6 +68,7 @@ h3{
     visibility: hidden;
     transition: opacity .8s ease, visibility .8s ease;
 }
+
 .overlay_turnOn{
     visibility: visible;
     opacity: 1;
