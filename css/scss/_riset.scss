@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -12,7 +16,6 @@ html{
 body{
     font-family: "Sen", sans-serif;
     background-color: #000;
-    overflow-x: hidden;
 }
 
 a{

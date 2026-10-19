@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -12,7 +16,6 @@ html {
 body {
   font-family: "Sen", sans-serif;
   background-color: #000;
-  overflow-x: hidden;
 }
 
 a {
@@ -176,7 +179,7 @@ h3 {
   display: block;
   position: absolute;
   z-index: 1;
-  top: 166px;
+  top: clamp(60px, 11.5svw, 166px);
   left: 0;
 }
 .block__img img {
@@ -279,6 +282,9 @@ h3 {
   .header__title h1 {
     font-size: clamp(22px, 6vw, 56px);
   }
+  .header__title p {
+    font-size: clamp(12px, 1.25svw, 18px);
+  }
   .header__right-side {
     flex-direction: column;
   }
@@ -332,9 +338,6 @@ h3 {
   }
   .planshet__img {
     display: none;
-  }
-  .block__img {
-    top: 60px;
   }
   .phone__img {
     display: block;
@@ -525,7 +528,7 @@ h3 {
     margin: 0;
   }
   .philosophy_block2 {
-    padding: 10px;
+    padding-right: 20px;
   }
 }
 .skillset {
@@ -534,7 +537,7 @@ h3 {
   margin: 0 auto;
   background-color: var(--bg-color);
   color: #fff;
-  padding-top: 120px;
+  padding-top: clamp(20px, 8.3svw, 120px);
 }
 
 .container {
@@ -651,6 +654,12 @@ h3 {
     max-width: 688px;
     margin-bottom: 0;
   }
+  .skillset_block1 p,
+  .skillset_block2 p,
+  .skillset_block3 p,
+  .skillset_block4 p {
+    margin-bottom: 5px !important;
+  }
 }
 @media (max-width: 642px) {
   .skillset__wrap {
@@ -670,12 +679,12 @@ h3 {
   color: white;
   max-width: 1440px;
   width: 100%;
-  padding-bottom: 153px;
+  padding-bottom: clamp(30px, 10.6svw, 153px);
 }
 
 .work__wrap {
   display: flex;
-  margin-top: 120px;
+  margin-top: clamp(20px, 6svw, 120px);
   padding: 10px;
   gap: 24px;
   justify-content: center;
@@ -745,7 +754,7 @@ h3 {
 .work__block-link {
   display: flex;
   justify-content: center;
-  margin-top: 91px;
+  margin-top: clamp(30px, 6.3svw, 91px);
 }
 .work__block-link a {
   padding: 24px 32px;
@@ -920,9 +929,6 @@ h3 {
   .dribbble__img {
     margin: 0 auto 20px;
   }
-  .dribbble__wrap {
-    gap: 20px;
-  }
   .dribbble__wrap h2 {
     margin-top: 20px;
   }
@@ -1086,7 +1092,7 @@ h3 {
   flex-direction: column;
   width: 526px;
   gap: 8px;
-  margin-bottom: 40px;
+  margin-bottom: clamp(10px, 6svw, 40px);
 }
 
 .input {
@@ -1212,6 +1218,7 @@ h3 {
   }
   .input__group-btn {
     margin-bottom: 10px;
+    margin-top: 10px;
   }
   .input {
     width: 300px;

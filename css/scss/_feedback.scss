@@ -46,7 +46,7 @@
     flex-direction: column;
     width: 526px;
     gap: 8px;
-    margin-bottom: 40px;
+    margin-bottom: clamp(10px, 6svw, 40px);
 }
 .input{
     background: #100f0fb8;
@@ -177,6 +177,7 @@
     }
     .input__group-btn{
         margin-bottom: 10px;
+        margin-top: 10px;
     }
     .input{
         width: 300px;

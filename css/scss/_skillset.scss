@@ -4,7 +4,7 @@
     margin: 0 auto;
     background-color: var(--bg-color);
     color: #fff;
-    padding-top: 120px;
+    padding-top: clamp(20px, 8.3svw, 120px);
 }
 
 .container{
@@ -71,6 +71,7 @@
 .skillset_block3,
 .skillset_block4{
     opacity: 0;
+        
 }
 
 .skillset_footer-wrap ul{
@@ -124,6 +125,14 @@
                 margin-bottom: 0;
                 
             }
+    }
+    .skillset_block1,
+    .skillset_block2,
+    .skillset_block3,
+    .skillset_block4{
+        p{
+            margin-bottom: 5px !important;
+        }
     }
 }
 

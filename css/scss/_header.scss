@@ -88,7 +88,7 @@
     display: block;
     position: absolute;
     z-index: 1;
-    top: 166px;
+    top: clamp(60px, 11.5svw, 166px);
     left: 0;
         img{
             max-width: 750px;
@@ -193,6 +193,9 @@
         h1{
             font-size: clamp(22px, 6vw, 56px);          
         }
+        p{
+            font-size: clamp(12px, 1.25svw, 18px);
+        }
     }
     .header__right-side{
         flex-direction: column;
@@ -253,9 +256,6 @@
     }
     .planshet__img{
         display: none;
-    }
-    .block__img{
-        top: 60px;
     }
     .phone__img{
         display: block;
