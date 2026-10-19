@@ -477,6 +477,9 @@ h3 {
   text-align: left;
   color: white;
 }
+.philosophy_block1 h2 {
+  font-size: clamp(32px, 6.8svw, 55px);
+}
 .philosophy_block1 a {
   margin-top: auto;
   color: white;
@@ -496,11 +499,10 @@ h3 {
   max-width: 600px;
   width: 100%;
   background-repeat: no-repeat;
-  overflow: hidden;
   transition: all 1s ease;
 }
 .philosophy_block2 img {
-  width: 100%;
+  width: 600px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -517,18 +519,23 @@ h3 {
   .philosophy_blocks {
     flex-wrap: wrap;
     justify-content: center;
+    padding-left: 0 !important;
+  }
+  .philosophy_block1 {
+    align-items: center;
   }
 }
 @media (max-width: 400px) {
   .philosophy_blocks {
     flex-direction: column;
     box-sizing: border-box;
+    gap: 30px;
   }
   .philosophy_block1 {
     margin: 0;
   }
   .philosophy_block2 {
-    padding-right: 20px;
+    flex-basis: 100%;
   }
 }
 .skillset {
@@ -1119,7 +1126,9 @@ h3 {
 .input__group-btn {
   background-color: rgb(21, 83, 102);
   width: 100%;
-  height: 75px;
+  height: clamp(50px, 16svw, 75px);
+  width: clamp(200px, 66.6svw, 300px) !important;
+  transform-origin: center center;
   margin-top: 40px;
   border: none;
   font-size: 18px;
@@ -1207,6 +1216,9 @@ h3 {
     max-width: 332px;
     width: 100%;
   }
+  .input {
+    height: clamp(20px, 8svw, 50px);
+  }
 }
 @media (max-width: 575px) {
   .feedback__wrap {
@@ -1214,7 +1226,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    border-top: 1px solid rgba(50, 50, 50, 0.521);
   }
   .input__group-btn {
     margin-bottom: 10px;
@@ -1302,10 +1313,17 @@ h3 {
   }
 }
 @media (max-width: 479px) {
+  .footer {
+    padding: 20px;
+  }
   .footer__wrap {
     flex-direction: column;
     align-items: center;
     gap: 0;
+  }
+  .footer__block-left {
+    flex-direction: row;
+    justify-content: space-between;
   }
   .footer__block-left p {
     display: none;
@@ -1314,8 +1332,7 @@ h3 {
     margin: 0 0 51px;
   }
   .footer__block-right {
-    flex-direction: column;
-    gap: 30px;
+    gap: 60px;
   }
 }
 .main__projects {

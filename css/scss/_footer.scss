@@ -83,12 +83,17 @@
     }
 }
 @media(max-width: 479px){
+    .footer{
+        padding: 20px;
+    }
     .footer__wrap{
         flex-direction: column;
         align-items: center;
         gap:0;
     }
         .footer__block-left{
+            flex-direction:row;
+            justify-content: space-between;
             p{
                 display: none;
             }
@@ -99,7 +104,6 @@
 
     }
         .footer__block-right{
-            flex-direction: column;
-            gap:30px;
+            gap:60px;
         }
     }
