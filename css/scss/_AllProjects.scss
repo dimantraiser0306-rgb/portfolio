@@ -43,3 +43,11 @@
 .call__img-code--red{
     fill: red !important;
 }
+
+@media(max-width: 780px){
+    .main__projects-wrap{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+}

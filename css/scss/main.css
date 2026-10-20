@@ -325,6 +325,9 @@ h3 {
   }
 }
 @media (max-width: 768px) {
+  .header__main {
+    height: clamp(300px, 100svw, 900px) !important;
+  }
   .block__right {
     background-color: #000;
   }
@@ -333,9 +336,6 @@ h3 {
   }
 }
 @media (max-width: 400px) {
-  .header__main {
-    height: 500px;
-  }
   .planshet__img {
     display: none;
   }
@@ -1381,4 +1381,12 @@ h3 {
 
 .call__img-code--red {
   fill: red !important;
+}
+
+@media (max-width: 780px) {
+  .main__projects-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

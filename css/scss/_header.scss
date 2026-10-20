@@ -240,6 +240,9 @@
 }
 
 @media(max-width: 768px){
+    .header__main{
+        height: clamp(300px, 100svw, 900px) !important;
+    }
     .block__right{
         background-color: #000;;
     }
@@ -251,9 +254,9 @@
 }
 
 @media(max-width:400px){
-    .header__main{
-        height: 500px;
-    }
+    // .header__main{
+    //     height: 500px;
+    // }
     .planshet__img{
         display: none;
     }
