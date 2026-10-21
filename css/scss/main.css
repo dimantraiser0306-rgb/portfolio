@@ -104,6 +104,8 @@ h3 {
 }
 
 .header__top {
+  width: -moz-fit-content;
+  width: fit-content;
   z-index: 9;
   left: 50%;
   transform: translateX(-50%);
@@ -1353,9 +1355,8 @@ h3 {
 .main__item {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 10px;
   overflow: hidden;
 }
