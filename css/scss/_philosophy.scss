@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .philosophy_block1 {  
@@ -66,10 +67,11 @@
         flex-wrap: wrap;
         justify-content: center;
         padding-left: 0 !important;
+        gap: 30px;
     }   
         .philosophy_block1{
-            align-items: center;
-
+            justify-content:flex-start;
+            height: clamp(518px, calc(1100px - 60vw), 797px);
     }
 }
 
@@ -77,7 +79,6 @@
     .philosophy_blocks{
         flex-direction: column; 
         box-sizing: border-box;
-        gap: 30px;
     }
     .philosophy_block1{
         margin: 0;
