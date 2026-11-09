@@ -22,6 +22,7 @@
     position: absolute;
     height: auto;
     padding: 10px;    
+    transition: translate 1s ease-in-out;
     .logo{
         max-width: 120px;
             img{
@@ -63,14 +64,6 @@
     gap: 5px;
 }
 
-.colored{
-    padding: 15px 28px;
-    background-color: var(--blue-color);
-    border-radius: 10px;
-        &:hover{
-            color: red;
-        }
-}
 
 .two__coresontal-blocks {
     display: flex;
@@ -140,6 +133,7 @@
     justify-content: space-between;
     top: 0;
     padding: 15px;  
+    cursor: pointer;
         span{
             background-color: var(--light-gray);
             width: 100%;
@@ -187,6 +181,12 @@
 
 
 @media(max-width: 1000px){
+    .header__top{
+        left: 0;
+        transition: transform .8s ease-in-out;
+        width: fit-content !important;
+        transform: translateX(-100%);
+    }
     .header__title{
         z-index: 2;
         left: 10px;
@@ -225,7 +225,6 @@
         backdrop-filter: blur(10px);
         box-sizing: border-box;
         border-radius: 10px;
-        transform: translateX(-100%);
         transition: transform .6s ease-in-out;      
             ul{
                 display: flex;

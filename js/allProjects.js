@@ -12,17 +12,9 @@ setInterval(function () {
     }, 1600);
 }, 1600);
 
-const turnOn = document.querySelector(".menu");
+const turnOn = document.querySelector(".header__top");
 const btn = document.querySelector(".menu__button");
 const overlay = document.querySelector(".overlay");
 btn.addEventListener("click", function () {
     turnOn.classList.toggle("turn_on");
-    overlay.classList.toggle("overlay_turnOn");
-});
-
-// разработака overlay
-overlay.addEventListener("click", () => {
-    console.log("click");
-    turnOn.classList.remove("turn_on");
-    overlay.classList.remove("overlay_turnOn");
 });
